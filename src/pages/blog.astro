@@ -1,0 +1,15 @@
+---
+import BlogPostPreview from "../components/BlogPostPreview.astro";
+import Layout from "../layouts/Layout.svelte";
+
+	let allPosts = await Astro.glob('./posts/*.md');
+	allPosts = allPosts.sort((a, b) => new Date(b.frontmatter.publishDate).valueOf() - new Date(a.frontmatter.publishDate).valueOf());
+---
+
+<Layout client:load>
+
+
+				<section aria-label="Blog post list">
+					{allPosts.map((p) => <BlogPostPreview post={p} />)}
+				</section>
+</Layout>

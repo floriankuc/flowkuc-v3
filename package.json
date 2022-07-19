@@ -1,0 +1,28 @@
+{
+  "name": "@example/blog",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "devDependencies": {
+    "@astrojs/preact": "^0.3.1",
+    "@astrojs/svelte": "^0.2.0",
+    "@rollup/plugin-replace": "^4.0.0",
+    "astro": "^1.0.0-beta.60",
+    "dotenv": "^16.0.1",
+    "prettier": "^2.7.1",
+    "prettier-plugin-astro": "^0.1.1"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^3.6.2",
+    "emailjs": "^3.6.0",
+    "emailjs-com": "^3.2.0",
+    "preact": "^10.7.3",
+    "sass": "^1.53.0",
+    "svelte": "^3.48.0"
+  }
+}

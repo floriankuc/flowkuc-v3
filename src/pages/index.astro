@@ -1,0 +1,142 @@
+---
+	// Component Imports
+	// import BaseHead from '../components/BaseHead.astro';
+	// import BlogPostPreview from '../components/BlogPostPreview.astro';
+	// import Container from '../layouts/Container.astro';
+	// import Sidebar from '../layouts/Sidebar.astro';
+	import Layout from '../layouts/Layout.svelte';
+
+	// Component Script:
+	// You can write any JavaScript/TypeScript that you'd like here.
+	// It will run during the build, but never in the browser.
+	// All variables are available to use in the HTML template below.
+	let title = 'Example Blog';
+	let description = 'The perfect starter for your perfect blog.';
+	let permalink = 'https://example.com/';
+
+---
+
+<html lang="en">
+
+
+<!-- <head> -->
+<!-- <BaseHead title={title} description={description} permalink={permalink} /> -->
+
+<!-- <style>
+		header {
+			width: 100%;
+			height: 100%;
+			background-color: var(--theme-bg-offset);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.content {
+			margin-top: 4rem;
+			margin-bottom: 8rem;
+		}
+
+		.content :global(main > * + *) {
+			margin-top: 1rem;
+		}
+
+		.intro {
+			padding-bottom: 4rem;
+			margin-bottom: 2rem;
+			border-bottom: 4px solid var(--theme-divider);
+		}
+
+		.intro>* {
+			margin: 0;
+		}
+
+		.latest {
+			font-size: 2.5rem;
+			font-weight: 700;
+		}
+	</style> -->
+<!-- </head> -->
+
+<!-- <body> -->
+<!-- <BlogHeader /> -->
+<!-- <div class="wrapper" style="border: 1px solid black;">
+			<main class="content">
+				<section class="intro">
+					<h1 class="latest">{title}</h1>
+					<p>{description}</p>
+				</section>
+				<section aria-label="Blog post list">
+					{allPosts.map((p) => <BlogPostPreview post={p} />)}
+				</section>
+			</main>
+		</div> -->
+<!-- <div style="display: flex; height: calc(100vh - 60px)">
+		<Sidebar>
+			<p style="font-family: open_sans;">menu</p>
+		</Sidebar>
+		<Container>test</Container>
+	</div> -->
+<Layout client:load>
+<div class="test">
+	<h1>Hi, I'm Florian</h1>
+<p>a web dev based in Hamburg, Germany. I enjoy creating and maintaining web applications and websites.</p>
+
+<p>Creating new things out of nothing and improving upon already existent systems, processes and solutions is what I love about software development. I enjoy both working independently and in a team and contributing to well-crafted and useful software with intuitive and clear user experience. I am an avid learner and always looking into new technologies that catch my attention.
+</p>
+<p>
+Originally I was trained in business and the education industry, more specifically language and intercultural training. Since then I have worked in companies of many shapes and sizes across various sectors which benefited me greatly in understanding different work cultures and business approaches.
+</p>
+<p>
+My web dev career started with developing booking apps at bookingtime. Currently I am happily working on exciting front end and cloud related projects in the life science sector at Eppendorf.
+</p>
+<p>
+Among the main technologies I work with and listed on stackshare are:
+</p>
+<ul>
+
+- 
+-
+-
+</ul>
+</div>
+</Layout>
+<!-- </body> -->
+
+</html>
+
+<style lang="scss">
+	@import '../styles/variables.scss';
+
+    .test {
+        flex-grow: 1;
+        // display: flex;
+        position: relative;
+			// overflow: hidden;
+
+
+    // &::before {
+    //   z-index: -2;
+    //   position: absolute;
+    //   content: "";
+    //   top: 0;
+    //   left: -50px;
+    //   width: calc(130% + 100px);
+    //   height: calc(100% + 40px);
+    //   background-color: black;
+    //   clip-path: polygon(0 0, 100% 0, 100% 105%, 10% 85%);
+    // }
+
+    // &::after {
+    //   z-index: -1;
+    //   position: absolute;
+    //   content: "";
+    //   top: 0;
+    //   left: -50px;
+    //   width: calc(130% + 90px);
+    //   height: calc(100% + 16px);
+    //   background-color: white;
+    //   clip-path: polygon(8% 5%, 80% 15%, 77% 85%, 12% 95%);
+    // }
+    }
+</style>

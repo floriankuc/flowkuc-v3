@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "open_sans";
+  src: local("Open Sans"), local("OpenSans"), local("Opensans"),
+    local("opensans"), local("open_sans"),
+    url("/fonts/OpenSans-Regular-webfont.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "open_sans";
+  src: url("/fonts/OpenSans-Bold-webfont.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "open_sans";
+  src: url("/fonts/OpenSans-ExtraBold-webfont.woff") format("woff");
+  font-weight: 900;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: "krooked";
+  src: url("/fonts/Krooked.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Earwig";
+  src: local("Earwig"), local("earwig"),
+    url("/fonts/Earwig.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Ransom";
+  src: local("Ransom"), local("Ransom"),
+    url("/fonts/ransom.woff") format("woff");
+}

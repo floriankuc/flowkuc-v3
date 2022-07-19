@@ -1,0 +1,46 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+div {
+  text-rendering: optimizeLegibility;
+  line-height: 1.6;
+}
+
+p {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 100px;
+  font-weight: 900;
+  // ${mqMax.sm} {
+  //   font-size: 3.5rem;
+  //   font-weight: 900;
+  //   margin: 0 0 2rem 0;
+  // }
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 900;
+  margin-bottom: 32px;
+}
+
+h3 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+code,
+code * {
+  font-family: monospace !important;
+}
+
+.error {
+  color: $color-red;
+  font-weight: 700;
+}
