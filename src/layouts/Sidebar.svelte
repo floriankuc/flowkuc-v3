@@ -19,35 +19,34 @@
   @import "../styles/variables.scss";
 
   .open {
-    left: -500px;
-    position: absolute;
-    top: 0;
+    @media (max-width: $mq-lg) {
+      left: -2000px !important;
+    }
   }
 
   .sidebar {
+    position: fixed;
     height: 100vh;
+    left: 0;
     padding: 0 80px;
-    // display: none;
-    /* background-color: lightblue; */
+    /* background-color: white; */
     min-width: 500px;
-    /* position: absolute;
-    top: 0; */
-    /* left: -500px; */
-    // flex-basis: 20rem;
-    //   flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: left 0.2s ease-in-out;
 
-    @media (min-width: $mq-lg) {
+    @media (max-width: $mq-lg) {
+      z-index: 100;
       position: fixed;
-      width: 500px;
-      left: 0;
-      // width: 100%;
+      /* width: 500px; */
+      background-color: white;
+
+      width: 100%;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-    }
-
-    @media (min-width: $mq-xxxl) {
-      // width: 25%;
+      align-items: center;
     }
   }
 </style>

@@ -6,10 +6,10 @@
   // import BaseHead from '../components/BaseHead.astro';
   // import Star from '../../public/assets/blog/icons/star.astro';
   import Bmenu from "../components/Bmenu.svelte";
-
+  import { fade } from "svelte/transition";
   import { writable } from "svelte/store";
 
-  export const open = writable(false);
+  export const open = writable(true);
 
   function toggle() {
     open.update((open) => !open);
@@ -37,7 +37,7 @@
   .layout {
     display: flex;
     height: 100vh;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     align-items: stretch;
     width: 100%;
   }

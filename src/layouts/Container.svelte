@@ -16,10 +16,13 @@
   .content {
     z-index: 2;
     color: white;
-    margin: 300px;
+    width: 60%;
+    margin-top: 100px;
+    /* margin: 300px; */
 
     @media (max-width: $mq-lg) {
       margin: 0;
+      width: 100%;
     }
   }
 
@@ -49,9 +52,14 @@
   .content {
     position: relative;
     height: fit-content;
-    // background-color: black;
+    max-height: 90%;
+    background-color: black;
     padding: 70px;
     // z-index: 10000;
+
+    @media (max-width: $mq-lg) {
+      height: 100%;
+    }
   }
 
   .container {
@@ -59,6 +67,9 @@
     position: relative;
     margin-left: 500px;
     max-height: 100vh;
+    justify-content: center;
+    /* align-items: center; */
+    /* padding: 0 10% 0 20%; */
     /* opacity: 0.6; */
     /* background-color: pink; */
     // position: relative;
@@ -66,6 +77,7 @@
 
     @media (max-width: $mq-lg) {
       margin-left: 0;
+      padding: 0;
 
       &::after {
         left: 0;
@@ -111,6 +123,7 @@
         // width: 0;
         // height: 0;
         left: 0;
+        background-color: black;
         clip-path: none;
       }
     }

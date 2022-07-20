@@ -13,5 +13,6 @@
 <style lang="scss">
   footer {
     /* background-color: red; */
+    margin-left: -34px;
   }
 </style>
